@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <section class="section-content">
+          <div class="person-info">
+            <div class="info">
+              <div class="avatar">
+                <img src="./images/image-jeremy.png" alt="avatar" />
+              </div>
+              <div class="text">
+                <span>Report for</span>
+                <h1>Jeremy Robson</h1>
+              </div>
+            </div>
+            <article class="btn-container">
+              <button type="button" class="btn" data-id="daily">Daily</button>
+              <button type="button" class="btn active" data-id="weekly">
+                Weekly
+              </button>
+              <button type="button" class="btn" data-id="monthly">
+                Monthly
+              </button>
+            </article>
+          </div>
+          <div class="data-person">
+            <article class="data Work">
+              <div class="image">
+                <img src="./images/icon-work.svg" alt="image" />
+              </div>
+              <div class="time">
+                <div class="title-container">
+                  <span class="title">Work</span>
+                  <img src="./images/icon-ellipsis.svg" alt="icon" />
+                </div>
+                <div class="content">
+                  <h2 class="current">32hrs</h2>
+                  <h3 class="previous">Last Week - 36hrs</h3>
+                </div>
+              </div>
+            </article>
+            <article class="data play">
+              <div class="image">
+                <img src="./images/icon-play.svg" alt="image" />
+              </div>
+              <div class="time">
+                <div class="title-container">
+                  <span class="title">Play</span>
+                  <img src="./images/icon-ellipsis.svg" alt="icon" />
+                </div>
+                <div class="content">
+                  <h2 class="current">10hrs</h2>
+                  <h3 class="previous">Last Week - 8hrs</h3>
+                </div>
+              </div>
+            </article>
+            <article class="data study">
+              <div class="image">
+                <img src="./images/icon-study.svg" alt="image" />
+              </div>
+              <div class="time">
+                <div class="title-container">
+                  <span class="title">Study</span>
+                  <img src="./images/icon-ellipsis.svg" alt="icon" />
+                </div>
+                <div class="content">
+                  <h2 class="current">4hrs</h2>
+                  <h3 class="previous">Last Week - 7hrs</h3>
+                </div>
+              </div>
+            </article>
+            <article class="data exercise">
+              <div class="image">
+                <img src="./images/icon-exercise.svg" alt="image" />
+              </div>
+              <div class="time">
+                <div class="title-container">
+                  <span class="title">Exercise</span>
+                  <img src="./images/icon-ellipsis.svg" alt="icon" />
+                </div>
+                <div class="content">
+                  <h2 class="current">4hrs</h2>
+                  <h3 class="previous">Last Week - 5hrs</h3>
+                </div>
+              </div>
+            </article>
+            <article class="data social">
+              <div class="image">
+                <img src="./images/icon-social.svg" alt="image" />
+              </div>
+              <div class="time">
+                <div class="title-container">
+                  <span class="title">Social</span>
+                  <img src="./images/icon-ellipsis.svg" alt="icon" />
+                </div>
+                <div class="content">
+                  <h2 class="current">5hrs</h2>
+                  <h3 class="previous">Last Week - 10hrs</h3>
+                </div>
+              </div>
+            </article>
+            <article class="data self-care">
+              <div class="image">
+                <img src="./images/icon-self-care.svg" alt="image" />
+              </div>
+              <div class="time">
+                <div class="title-container">
+                  <span class="title">Self Care</span>
+                  <img src="./images/icon-ellipsis.svg" alt="icon" />
+                </div>
+                <div class="content">
+                  <h2 class="current">2hrs</h2>
+                  <h3 class="previous">Last Week - 2hrs</h3>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

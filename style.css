@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+:root {
+  /* Primary Color */
+  --Blue: hsl(246, 80%, 60%);
+
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+  /* Neutral Color */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-size: 1.8rem;
+  /* Animation */
+  --transition: 0.3s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Very-dark-blue);
+}
+
+.section-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5rem;
+}
+
+.person-info {
+  background-color: var(--Dark-blue);
+  border-radius: 1rem;
+  width: 55.5rem;
+}
+
+.info {
+  padding: 3rem;
+  background-color: var(--Blue);
+  border-radius: 1rem;
+}
+
+.avatar {
+  height: 8rem;
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.avatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid var(--white);
+  border-radius: 50%;
+}
+
+.text {
+  margin: 4rem 0;
+}
+
+.text span {
+  font-size: var(--font-size);
+  color: var(--Pale-Blue);
+}
+
+.text h1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.btn {
+  border: none;
+  width: fit-content;
+  background-color: transparent;
+  color: var(--Desaturated-blue);
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
+.active {
+  color: var(--white);
+}
+
+.data-person {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.data {
+  width: 26rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.time {
+  padding: 3rem;
+  background-color: var(--Dark-blue);
+  border-radius: 1rem;
+  margin-top: -3rem;
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.time:hover {
+  filter: brightness(1.5);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: var(--font-size);
+  color: var(--white);
+  font-weight: 400;
+}
+
+.current {
+  font-size: 6rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.previous {
+  font-size: 1.5rem;
+  color: var(--Desaturated-blue);
+  font-weight: 300;
+}
+
+.Work {
+  background-color: var(--Light-red-work);
+}
+
+.play {
+  background-color: var(--Soft-blue-play);
+}
+
+.study {
+  background-color: var(--Light-red-study);
+}
+
+.exercise {
+  background-color: var(--Lime-green-exercise);
+}
+
+.social {
+  background-color: var(--Violet-social);
+}
+
+.self-care {
+  background-color: var(--Soft-orange-self-care);
+}
+
+@media screen and (max-width: 67em) {
+  .container {
+    padding: 2rem;
+  }
+
+  .section-content {
+    flex-direction: column;
+  }
+
+  .person-info {
+    width: 100%;
+  }
+
+  .data-person {
+    justify-content: center;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .btn:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 47.875em) {
+  .data {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 42.5em) {
+  .container {
+    padding: 2rem;
+  }
+
+  .section-content {
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .btn:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .data {
+    width: 100%;
+  }
+
+  .current {
+    font-size: 5rem;
+  }
+
+  .previous {
+    text-align: center;
+  }
+}
